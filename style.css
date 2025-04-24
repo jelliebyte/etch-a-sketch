@@ -1,0 +1,31 @@
+body {
+    background-color: rebeccapurple;
+}
+
+#screen {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100vw;
+    flex: 1;
+    flex-shrink: none;
+}
+
+#row > div {
+    width: 60px;
+    height: 55px;
+    flex: 1;
+}
+
+#pixelInput{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
