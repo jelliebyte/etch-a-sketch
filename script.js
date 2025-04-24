@@ -59,12 +59,14 @@ enterButton.addEventListener("click", function(){
     }
     else {
         pixels = inputLabel.value;
-        rows = document.querySelectorAll("row");
-        document.removeChild(rows);
+        rows = screen.querySelectorAll("div#row");
+        rows.forEach(element => {
+            screen.removeChild(element)
+        });
         createGrid(pixels);
     }
 })
 
-enterButton.addEventListener("click", function(){
-    
+clearButton.addEventListener("click", function(){
+    location.reload()
 })
